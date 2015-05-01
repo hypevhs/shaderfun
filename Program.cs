@@ -130,7 +130,7 @@ namespace ShaderFun
                 delta.Y *= -1;
             }
 
-            DrawString(window, false, ToVector2f(scrollerPos));
+            DrawString(window, ToVector2f(scrollerPos));
 
             window.Display();
         }
