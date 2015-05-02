@@ -17,10 +17,10 @@ namespace ShaderFun
         static RenderStates shaderLetter;
         static RenderStates shaderBackground;
         static Dictionary<string, Texture> textures;
-        const string scroller = "sfml.net";
+        const string SCROLLER = "sfml.net";
 		const int LETTERWIDTH = 52;
 		const int LETTERHEIGHT = 50;
-		static readonly int scrollerWidth = (scroller.Length * (LETTERHEIGHT + 12));
+		static readonly int scrollerWidth = (SCROLLER.Length * (LETTERHEIGHT + 12));
 		static readonly int scrollerHeight = LETTERWIDTH;
         static Vector2i scrollerPos = new Vector2i(10, 10);
         static Vector2i delta = new Vector2i(3, 2);
@@ -138,7 +138,7 @@ namespace ShaderFun
         //outerShader is to be shaderGold, inner is shaderScan
         private static void DrawString(RenderWindow window, Vector2f where)
         {
-            char[] cScroller = scroller.ToLower().ToCharArray();
+            char[] cScroller = SCROLLER.ToLower().ToCharArray();
 
             //draw each char in the scroller text
             for (int si = 0; si < cScroller.Length; si++)
