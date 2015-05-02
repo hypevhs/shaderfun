@@ -1,2 +1,4 @@
 research/
 bin/
+*.userprefs
+*.swp
