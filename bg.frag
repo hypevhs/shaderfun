@@ -1,4 +1,4 @@
-﻿#version 130
+#version 130
 
 uniform float time;
 uniform vec2 resolution;
