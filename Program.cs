@@ -18,10 +18,10 @@ namespace ShaderFun
         static RenderStates shaderBackground;
         static Dictionary<string, Texture> textures;
         const string SCROLLER = "sfml.net";
-		const int LETTERWIDTH = 52;
-		const int LETTERHEIGHT = 50;
-		static readonly int scrollerWidth = (SCROLLER.Length * (LETTERHEIGHT + 12));
-		static readonly int scrollerHeight = LETTERHEIGHT;
+                const int LETTERWIDTH = 52;
+                const int LETTERHEIGHT = 50;
+                static readonly int scrollerWidth = (SCROLLER.Length * (LETTERHEIGHT + 12));
+                static readonly int scrollerHeight = LETTERHEIGHT;
         static Vector2i scrollerPos = new Vector2i(10, 10);
         static Vector2i delta = new Vector2i(3, 2);
         static Texture backgroundTexture = new Texture(new Image(new Color[,] { { Color.White } }));
@@ -147,7 +147,7 @@ namespace ShaderFun
                 if (charHere == ' ') { continue; }
 
                 Vector2f positionHere = new Vector2f(
-					where.X + (si * (LETTERHEIGHT+12)),
+                                        where.X + (si * (LETTERHEIGHT+12)),
                     where.Y
                 );
 
@@ -156,7 +156,7 @@ namespace ShaderFun
                 RectangleShape testShape = new RectangleShape()
                 {
                     Position = positionHere,
-					Size = new Vector2f(LETTERHEIGHT, LETTERWIDTH),
+                                        Size = new Vector2f(LETTERHEIGHT, LETTERWIDTH),
                     Texture = textureHere,
                 };
                 shaderLetter.Shader.SetParameter("tex", textureHere);
