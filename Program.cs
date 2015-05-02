@@ -21,7 +21,7 @@ namespace ShaderFun
 		const int LETTERWIDTH = 52;
 		const int LETTERHEIGHT = 50;
 		static readonly int scrollerWidth = (SCROLLER.Length * (LETTERHEIGHT + 12));
-		static readonly int scrollerHeight = LETTERWIDTH;
+		static readonly int scrollerHeight = LETTERHEIGHT;
         static Vector2i scrollerPos = new Vector2i(10, 10);
         static Vector2i delta = new Vector2i(3, 2);
         static Texture backgroundTexture = new Texture(new Image(new Color[,] { { Color.White } }));
